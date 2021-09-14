@@ -82,12 +82,13 @@ public class MainActivity extends AppCompatActivity {
                 );
                 //StringRequest 끝나는 파트
 
+                //5.RequestQueue객체에 Request객체 추가 !
                 requestQueue.add(request);
 
 
             }
         });
-        //5.RequestQueue객체에 Request객체 추가 !
+
 
 
 

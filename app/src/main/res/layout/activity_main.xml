@@ -21,8 +21,8 @@
 
     <TextView
         android:id="@+id/tv_result"
-        android:layout_width="159dp"
-        android:layout_height="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="님 환영합니다"
         android:textSize="24sp"
