@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // android:usesCleartextTraffic="true"  매니페스트에서
         //3. RequestQueue 객체 생성 !!
         //4.Request객체 생성 !
+        //5.RequestQueue객체에 Request객체 추가 !
 
 
 
