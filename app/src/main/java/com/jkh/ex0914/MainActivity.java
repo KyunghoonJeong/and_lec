@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,8 +40,11 @@ public class MainActivity extends AppCompatActivity {
         // http , https 둘다 허용
         // android:usesCleartextTraffic="true"  매니페스트에서
         //3. RequestQueue 객체 생성 !!
-
-
+        if(requestQueue==null) {
+            requestQueue = Volley.newRequestQueue(getApplicationContext()); //현재 페이지 정보인 getapplicationContext()
+            //
+        }
+        //리퀘스트큐가 없다면 만들어준다
 
         //4.Request객체 생성 !
         //5.RequestQueue객체에 Request객체 추가 !
