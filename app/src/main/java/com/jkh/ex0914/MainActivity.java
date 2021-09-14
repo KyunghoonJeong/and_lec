@@ -70,16 +70,21 @@ public class MainActivity extends AppCompatActivity {
                         new Response.Listener<String>() {  //응답 성공시
                             @Override
                             public void onResponse(String response) {
-
+                            tv_result.setText(response);
                             }
                         },
                         new Response.ErrorListener() {   //응답 실패시
                             @Override
                             public void onErrorResponse(VolleyError error) {
-
+                                tv_result.setText("Fail");
                             }
                         }
                 );
+                //StringRequest 끝나는 파트
+
+                requestQueue.add(request);
+
+
             }
         });
         //5.RequestQueue객체에 Request객체 추가 !
