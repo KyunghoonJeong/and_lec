@@ -1,2 +1,1 @@
-# and_lec
-a
+# android_lec
