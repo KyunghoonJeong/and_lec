@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#A6E3E1E1">
+    android:background="#A6FFFFFF">
 
     <TextView
         android:id="@+id/tv_rank"
@@ -22,7 +22,7 @@
         android:id="@+id/tv_movieNm"
         android:layout_width="160dp"
         android:layout_height="50dp"
-        android:background="#A6E3E1E1"
+        android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="center"
         android:text="영화 제목"
@@ -34,7 +34,7 @@
         android:id="@+id/tv_audiAcc"
         android:layout_width="80dp"
         android:layout_height="20dp"
-        android:background="#A6E3E1E1"
+        android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="right"
         android:text="0명"
@@ -72,7 +72,7 @@
         android:id="@+id/tv_openDt"
         android:layout_width="0dp"
         android:layout_height="20dp"
-        android:background="#A6E3E1E1"
+        android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="left"
         android:text=" 0000-00-00"
@@ -86,7 +86,7 @@
         android:id="@+id/tv_rankOldAndNew"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:background="#A6E3E1E1"
+        android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="center_vertical"
         android:text=" 최신여부"

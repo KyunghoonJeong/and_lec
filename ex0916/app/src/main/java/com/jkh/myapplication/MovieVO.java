@@ -1,4 +1,6 @@
-public class MoiveVO {
+package com.jkh.myapplication;
+
+public class MovieVO {
 
 
     //oop
@@ -14,7 +16,7 @@ public class MoiveVO {
     //1. 생성자
     //2. 게터만 ,,!
 
-    public MoiveVO(String rank, String rankOldAndNew, String movieNm, String audiAcc, String openDt) {
+    public MovieVO(String rank, String rankOldAndNew, String movieNm, String audiAcc, String openDt) {
         this.rank = rank;
         this.rankOldAndNew = rankOldAndNew;
         this.movieNm = movieNm;
