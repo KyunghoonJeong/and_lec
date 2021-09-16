@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         tv_result = findViewById(R.id.tv_result);
         btn_req = findViewById(R.id.btn_req);
 
-       //volley를 이용한 서버 통신 하기 위한 단계
+        //volley를 이용한 서버 통신 하기 위한 단계
         //1. 볼리 라이브러리를 추가해야한다.
         //1-1. file -> project structure -> dependecy
         // -> +버튼 누른 후 라이브러리 디펜던시
