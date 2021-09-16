@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -32,6 +33,8 @@ public class MovieActivity extends AppCompatActivity {
     Button btn_movie;
     RequestQueue requestQueue;
     List<MovieVO> data;
+    String date; //Main activity에서 넘어온 날짜를 저장할 변수
+    ListView lv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +42,12 @@ public class MovieActivity extends AppCompatActivity {
 
         btn_movie = findViewById(R.id.btn_movie);
         data = new ArrayList<MovieVO>();
-        String date; //Main activity에서 넘어온 날짜를 저장할 변수
+
+        lv=findViewById(R.id.lv);
+
+        MovieAdapter adapter = new MovieAdapter(getApplicationContext(),R.layout.movielist,data);
+
+        lv.setAdapter(adapter);
 
 
         if(requestQueue ==null){
@@ -90,8 +98,9 @@ public class MovieActivity extends AppCompatActivity {
                                                                    //jsonobject를 스트링형태로
                                                              } catch (JSONException e) {
                                                                  e.printStackTrace();
-                                                             }
+                                                             }adapter.notifyDataSetChanged(); // 새로고침
                                                          }
+
                                                      },
                                                      new Response.ErrorListener() {
                                                          @Override
@@ -101,6 +110,7 @@ public class MovieActivity extends AppCompatActivity {
                                                      }
                                              );
                                              requestQueue.add(request);
+
 
 
 

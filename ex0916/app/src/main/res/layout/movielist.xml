@@ -15,18 +15,24 @@
         android:gravity="center"
         android:text="순 위"
         android:textColor="#C92B2A2A"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_movieNm"
-        android:layout_width="160dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
-        android:gravity="center"
+        android:gravity="center_vertical"
+        android:paddingLeft="20sp"
+        android:paddingBottom="10sp"
         android:text="영화 제목"
         android:textColor="#C92B2A2A"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_rank"
         app:layout_constraintTop_toBottomOf="@+id/tv_rankOldAndNew" />
 
@@ -36,9 +42,10 @@
         android:layout_height="20dp"
         android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
-        android:gravity="right"
+        android:gravity="center"
         android:text="0명"
         android:textColor="#C92B2A2A"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/sss"
         app:layout_constraintTop_toBottomOf="@+id/tv_movieNm" />
 
@@ -51,6 +58,7 @@
         android:gravity="center"
         android:text="관객수"
         android:textColor="#C92B2A2A"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_rank"
@@ -65,6 +73,7 @@
         android:gravity="center"
         android:text="개봉일자"
         android:textColor="#C92B2A2A"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_audiAcc"
         app:layout_constraintTop_toBottomOf="@+id/tv_movieNm" />
 
@@ -75,8 +84,10 @@
         android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="left"
+        android:paddingLeft="5sp"
         android:text=" 0000-00-00"
         android:textColor="#C92B2A2A"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/dd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dd"
@@ -89,8 +100,10 @@
         android:background="#A6FFFFFF"
         android:fontFamily="@font/aldrich"
         android:gravity="center_vertical"
-        android:text=" 최신여부"
+        android:paddingLeft="15sp"
+        android:text="최신여부"
         android:textColor="#C92B2A2A"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/tv_rank"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
