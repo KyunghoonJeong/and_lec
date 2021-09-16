@@ -13,7 +13,7 @@
         android:layout_marginBottom="41dp"
         android:fontFamily="monospace"
         android:text="영화 정보 요청"
-        android:textColor="#ECFFFFFF"
+        android:textColor="#C92B2A2A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
