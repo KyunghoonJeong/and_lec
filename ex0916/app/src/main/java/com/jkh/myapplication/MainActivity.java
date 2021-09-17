@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MovieActivity.class);
 
                 int check = Integer.parseInt(date);
-                if(check >= 20120101 && check <=20210915){
+                if(check >= 20120101 && check <=20210916){
                     intent.putExtra("date",date);
                     startActivity(intent);
                 }
