@@ -19,6 +19,7 @@ public class DoActivity extends AppCompatActivity {
     ImageView[] imgs;
     int cnt ; //잡은 개수 저장할 변수
     boolean isPlaying;
+    final int CATCH = 9999 ; // catch (stop )
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class DoActivity extends AppCompatActivity {
         isPlaying =true;
     
         TimerThread thread2 = new TimerThread(tv_timer);
+        thread2.start();
         
         imgs = new ImageView[9];
 //        int num1 = 1000137;
@@ -197,6 +199,12 @@ public class DoActivity extends AppCompatActivity {
         private  TimerThread(TextView tv){
             this.tv = tv;
 
+
+
+        }
+
+        @Override
+        public void run() {
             try {
                 for(int i = 9 ; i >= 0 ; i--){
                     Thread.sleep(1000);
@@ -211,11 +219,6 @@ public class DoActivity extends AppCompatActivity {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
-        }
-
-        @Override
-        public void run() {
             
         }
     }
