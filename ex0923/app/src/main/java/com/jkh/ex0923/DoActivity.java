@@ -3,6 +3,7 @@ package com.jkh.ex0923;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -25,6 +26,9 @@ public class DoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_do);
+
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.mouse);
+        mediaPlayer.start();
 
         tv_timer =findViewById(R.id.tv_timer);
         tv_count = findViewById(R.id.tv_count);
